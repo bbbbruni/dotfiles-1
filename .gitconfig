@@ -1,0 +1,13 @@
+[core]
+	excludesfile = /Users/viniciusbrasil/.gitignore
+	editor = vim
+	ignorecase = false
+[user]
+	name = Vinicius Brasil
+	email = marcosbrasilaraujo@gmail.com
+[color]
+	ui = true
+[credential]
+	helper = osxkeychain
+[alias]
+	hist = log --graph --date-order --date=short --pretty=format:'%C(auto)%h%d %C(reset)%s %C(bold blue)%ce %C(reset)%C(green)%cr (%cd)'
