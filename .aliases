@@ -31,14 +31,20 @@ alias gs='git status'
 alias gc='git commit'
 alias gcm='git commit -m '
 alias gl='git log --all --decorate --oneline --graph'
-alias ga='git add'
+alias gp='git push'
+alias gpl='git pull'
+alias gd='git diff --color-words --color'
 
 # Docker
 alias dk='docker'
 alias dc='docker-compose'
 alias dcu='docker-compose up'
 alias dkstop='docker stop $(docker ps -qa)'
+alias dkclean='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
 dke() {
     docker exec -ti $1 bash
 }
 
+# Homebrew
+alias brew-diag='brew doctor && brew missing'
+alias brew-wash='brew update && brew upgrade && brew cleanup -s && brew cask cleanup && brew-diag'
