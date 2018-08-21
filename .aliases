@@ -24,4 +24,5 @@ alias brew-diag='brew doctor && brew missing'
 alias brew-wash='brew update && brew upgrade && brew cleanup -s && brew cask cleanup && brew-diag'
 
 # Other
+alias todo='vim ~/Documents/TODO.md'
 alias grep='grep --color=auto'
